@@ -34,7 +34,7 @@ if(numel(varargin))
 else
     nameList = {};
 end
-palette = {'b-v', 'r-^', 'k-+', 'g-o', 'm-s', 'c-*', 'y-x', 'r-d'};
+palette = {'b-v', 'r-^', 'y-+', 'g-o', 'm-s', 'c-*', 'k-x', 'r-d'};
 legendRow = cell(1,length(modelList));
 
 if length(modelList)<1

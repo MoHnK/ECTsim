@@ -34,6 +34,9 @@
 function[model] = boundaryVoltageVector(model, varargin)
 
 [model.boundary_points, model.electrodes_points, model.calculate_points]=findBoundaryCondInd(model);
+
+
+
 if(isempty(model.boundary_points) || isempty(model.electrodes_points) || isempty(model.calculate_points) ...
     || (numel(model.unused_points)>0) || ((numel(model.boundary_points)+numel(model.calculate_points))~=numel(model.sensor_points)))
     error('Halted. Mesh points are not assigned!');
